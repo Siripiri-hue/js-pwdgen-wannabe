@@ -7,7 +7,12 @@ const userColor = prompt("Qual è il tuo colore preferito?")
 console.log(userColor)
 
 // generazione psw
-const psw = `${userName}${userSurname}${userColor}21`
+const psw = userName + userSurname + userColor + '21'
+
+// const psw = `${userName}${userSurname}${userColor}21`
 
 // generazione output
-document.getElementById("message").innerHTML += ` ${userName}, la tua password è ${psw}`
+salut = document.getElementById("message").innerHTML
+document.getElementById("message").innerHTML = salut + ' ' + userName + ', la tua password è: ' + psw
+
+// document.getElementById("message").innerHTML += ` ${userName}, la tua password è: ${psw}`
