@@ -8,3 +8,6 @@ console.log(userColor)
 
 // generazione psw
 const psw = `${userName}${userSurname}${userColor}21`
+
+// generazione output
+document.getElementById("message").innerHTML += ` ${userName}, la tua password è ${psw}`
